@@ -1,0 +1,12 @@
+<button
+        class="btn btn-primary"
+        [disabled] = "!allowNewSterver"
+        (click)="onCreateServer()">Add Server</button>
+
+<p>{{ allowNewSterver }}</p> <!-- string interpolation -->
+<p [innerText] = "allowNewSterver"></p> <!-- property binding -->
+
+
+<p>{{ serverCreationStatus }}</p>
+<app-server></app-server>
+<app-server></app-server>
